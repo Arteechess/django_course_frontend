@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>MovieHub - Личный кабинет</title>
+ <link href="css/bootstrap.min.css" rel="stylesheet" >
+ <link href="css/font-awesome.min.css" rel="stylesheet" >
+ <link href="css/global.css" rel="stylesheet">
+ <link href="css/index.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+ <style>
+  /* Стили для личного кабинета */
+  #profile {
+   padding: 30px 0;
+   background-color: #f8f9fa;
+  }
+
+  .profile_info {
+   text-align: center;
+   margin-bottom: 20px;
+  }
+
+  .profile_info img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 10px;
+  }
+
+  .profile_details {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile_details h3 {
+   margin-bottom: 15px;
+   color: #333;
+  }
+
+  .profile_details p {
+   margin-bottom: 10px;
+  }
+
+  .profile_details .btn {
+   margin-top: 15px;
+  }
+
+  .movie_list {
+   margin-top: 30px;
+  }
+
+  .movie_list h4 {
+   margin-bottom: 15px;
+   color: #333;
+  }
+
+  .movie_item {
+   margin-bottom: 15px;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+  }
+ </style>
+
+</head>
+<body>
+
+<div class="main clearfix position-relative">
+ <!-- Модальное окно поиска (скопировано с главной страницы) -->
+ <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none; top:0;" aria-hidden="true">
+  <div class="modal-dialog">
+   <div class="modal-content bg-transparent border-0">
+    <div class="modal-header border-0">
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+    </div>
+    <div class="modal-body p-0">
+     <div class="search_1">
+      <div class="input-group">
+       <input type="text" class="form-control bg-white border-0" placeholder="Search...">
+       <span class="input-group-btn">
+				<button class="btn btn-primary bg_oran border_1 rounded-0 p-3 px-4" type="button">
+					<i class="fa fa-search"></i></button>
+				</span>
+			 </div>
+			</div>
+		 </div>
+		</div>
+	 </div>
+	</div>
+		 
+		 <!-- Шапка сайта (скопирована с главной страницы) -->
+		 <button class="btn btn-primary bg_oran border_1 rounded-0 p-3 px-4" type="button">
+			<i class="fa fa-search"></i></button>
+		</span>
+	 </div>
+	</div>
+ </div>
+</div>
+</div>
+</div>
+ 
+<div class="main clearfix position-relative">
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none; top:0;" aria-hidden="true">
+			 <div class="modal-dialog">
+			 <div class="modal-content bg-transparent border-0">
+				 <div class="modal-header border-0">
+				 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+				 </div>
+				 <div class="modal-body p-0">
+				 <div class="search_1">
+						<div class="input-group">
+				 <input type="text" class="form-control bg-white border-0" placeholder="Search...">
+				 <span class="input-group-btn">
+					 <button class="btn btn-primary bg_oran border_1 rounded-0 p-3 px-4" type="button">
+						 <i class="fa fa-search"></i></button>
+				 </span>
+		 </div>
+							 </div>
+				 </div>
+			 </div>
+			 </div>
+		 </div>
+	<div class="main_1 clearfix position-absolute top-0 w-100">
+		<section id="header">
+ <nav class="navbar navbar-expand-md navbar-light px_4" id="navbar_sticky">
+	 <div class="container-fluid">
+		 <a class="navbar-brand  p-0 fw-bold text-white" href="index.html"><i class="fa fa-modx col_oran"></i> MovieHub </a>
+		 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mb-0 ms-auto">
+			 
+				 <li class="nav-item">
+					 <a class="nav-link active" aria-current="page" href="index.html">Домой</a>
+				 </li>
+			
+		 <li class="nav-item">
+					 <a class="nav-link" href="about.html">О нас</a>
+				 </li>
+		 
+		 <li class="nav-item dropdown">
+					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 Фильмы
+					 </a>
+					 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+						 <li><a class="dropdown-item" href="movies.html"><i class="fa fa-chevron-right font_12 me-1"></i> О фильмах</a></li>
+						 <li><a class="dropdown-item border-0" href="detail.html"><i class="fa fa-chevron-right font_12 me-1"></i> Кино в деталях</a></li>
+					 </ul>
+				 </li>
+		 
+		 <li class="nav-item dropdown">
+					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 Мнения
+					 </a>
+					 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+						 <li><a class="dropdown-item" href="blog.html"><i class="fa fa-chevron-right font_12 me-1"></i> О мнениях</a></li>
+						 <li><a class="dropdown-item border-0" href="blog_detail.html"><i class="fa fa-chevron-right font_12 me-1"></i> Мнения в деталях</a></li>
+					 </ul>
+				 </li>
+		 
+		 <li class="nav-item dropdown">
+					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 Войти
+					 </a>
+					 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+				 <li><a class="dropdown-item" href="faq.html"><i class="fa fa-chevron-right font_12 me-1"></i> Faqs</a></li>
+						 <li><a class="dropdown-item" href="login.html"><i class="fa fa-chevron-right font_12 me-1"></i> Авторизация</a></li>
+						 <li><a class="dropdown-item" href="register.html"><i class="fa fa-chevron-right font_12 me-1"></i> Регистрация</a></li>
+			 <li><a class="dropdown-item border-0" href="ticket.html"><i class="fa fa-chevron-right font_12 me-1"></i> Билеты</a></li>
+					 </ul>
+				 </li>
+			 
+		 <li class="nav-item">
+					 <a class="nav-link" href="contact.html">Присоединяйся</a>
+				 </li>
+			 </ul>
+			 <ul class="navbar-nav mb-0 ms-auto">
+					<li class="nav-item">
+					 <a class="nav-link fs-5 drop_icon" data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>
+				 </li>
+				 <li class="nav-item">
+					 <a class="nav-link fs-5 drop_icon" href="#"><i class="fa fa-user"></i></a>
+				 </li>
+			 </ul>
+		 </div>
+	 </div>
+ </nav>
+ </section>
+ </div>
+<!-- Основной контент страницы "Личный кабинет" -->
+<section id="profile">
+<div class="container">
+<div class="row">
+		<div class="col-md-4">
+				<div class="profile_info">
+						<img src="img/user.png" alt="Аватар пользователя">
+						<h2>Имя Пользователя</h2>
+						<p>email@example.com</p>
+				</div>
+		</div>
+		<div class="col-md-8">
+				<div class="profile_details">
+						<h3>Информация о пользователе</h3>
+						<p><strong>Имя:</strong> Имя Пользователя</p>
+						<p><strong>Email:</strong> email@example.com</p>
+						<p><strong>Любимый жанр:</strong> Комедия</p>
+						<button class="btn btn-primary bg_oran border_1">Редактировать профиль</button>
+				</div>
+
+				<div class="movie_list">
+						<h4>Список желаемого</h4>
+						<div class="movie_item">
+								<strong>Название фильма 1</strong> - Жанр
+						</div>
+						<div class="movie_item">
+								<strong>Название фильма 2</strong> - Жанр
+						</div>
+						<div class="movie_item">
+								<strong>Название фильма 3</strong> - Жанр
+						</div>
+				</div>
+		</div>
+</div>
+</div>
+</section>
+<section id="footer_t">
+<div class="container-fluid">
+<div class="footer_t1 row">
+<div class="col-md-4 p-0">
+<div class="footer_ti position-relative">
+<div class="footer_ti1">
+<div class="grid clearfix">
+<figure class="effect-jazz mb-0">
+<a href="#"><img src="img/12.jpg" class="w-100" alt="img25"></a>
+</figure>
+</div>
+</div>
+<div class="footer_ti2 bg_back pt-5 text-center px-4 position-absolute w-100 h-100 top-0">
+<span class="d-inline-block bg-white rounded-circle col_oran fs-1"><i class="fa fa-youtube-play"></i></span>
+<h2 class="mb-0 text-white mt-3">Top 5 Movies in Theaters</h2>
+</div>
+</div>
+</div>
+<div class="col-md-4 p-0">
+<div class="footer_ti position-relative">
+<div class="footer_ti1">
+<div class="grid clearfix">
+<figure class="effect-jazz mb-0">
+	<a href="#"><img src="img/13.jpg" class="w-100" alt="img25"></a>
+	 </figure>
+	</div>
+	</div>
+	<div class="footer_ti2 bg_backn1 pt-5 text-center px-4 position-absolute w-100 h-100 top-0">
+		<span class="d-inline-block bg-white rounded-circle col_oran fs-2"><i class="fa fa-film"></i></span>
+		<h2 class="mb-0 text-white mt-3">Watch Coming Soon Movies</h2>
+	</div>
+	 </div>
+	</div>
+	<div class="col-md-4 p-0">
+	 <div class="footer_ti position-relative">
+		 <div class="footer_ti1">
+		<div class="grid clearfix">
+	 <figure class="effect-jazz mb-0">
+	<a href="#"><img src="img/14.jpg" class="w-100" alt="img25"></a>
+	 </figure>
+	</div>
+	</div>
+	<div class="footer_ti2 bg_back pt-5 text-center px-4 position-absolute w-100 h-100 top-0">
+		<span class="d-inline-block bg-white rounded-circle col_oran fs-1"><i class="fa fa-video-camera"></i></span>
+		<h2 class="mb-0 text-white mt-3"> Hot Movies Trailers Live Now</h2>
+	</div>
+	 </div>
+	</div>
+</div>
+</div>
+</section>
+
+<section id="footer" class="p_3 bg-black">
+<div class="container-xl">
+	 <div class="footer_1 row pb-4">
+	<div class="col-md-3">
+	 <div class="footer_1l">
+		 <h4 class="mb-0"><a class="fw-bold text-white" href="index.html"><i class="fa fa-modx col_oran"></i> MovieHub </a></h4>
+	 </div>
+	</div>
+	<div class="col-md-9">
+	 <div class="footer_1r text-end">
+		 <ul class="mb-0">
+		<li class="d-inline-block"><a class="text-white-50 a_tag" href="#">Help</a></li>
+			<li class="d-inline-block text-white-50">/</li>
+		<li class="d-inline-block me-2"><a class="text-white-50 a_tag" href="#"> Privacy Policy</a></li>
+		<li class="d-inline-block"><a class="social_icon" href="#"> <i class="fa fa-twitter"></i></a></li>
+		 <li class="d-inline-block"><a class="social_icon" href="#"> <i class="fa fa-facebook"></i></a></li>
+	 <li class="d-inline-block"><a class="social_icon" href="#"> <i class="fa fa-instagram"></i></a></li>
+		<li class="d-inline-block"><a class="social_icon" href="#"> <i class="fa fa-pinterest"></i></a></li>
+	</ul>
+	 </div>
+	</div>
+</div>
+<div class="footer_2 row mt-4">
+	<div class="col-md-3">
+	 <div class="footer_2i">
+				<p class="text-white fw-bold fs-5">Buy movie tickets easily with Aovis system nationwide</p>
+	<h6 class="mb-0 mt-4"><a class="button" href="#">Get Your Ticket</a></h6>
+	 </div>
+	</div>
+	<div class="col-md-3">
+	 <div class="footer_2i">
+				<h5 class="col_oran mb-4">Movies</h5>
+	<div class="row footer_1ism">
+	<h6 class="fw-normal col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Action</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Adventure</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Animation</a></h6>
+	<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Thriller</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Crime</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-white-50 a_tag" href="#"> Comedy</a></h6>
+		</div>
+	 </div>
+	</div>
+	<div class="col-md-3">
+	 <div class="footer_2i">
+				<h5 class="col_oran mb-4">Links</h5>
+	<div class="row footer_1ism">
+	<h6 class="fw-normal col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> About Us</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> My account</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> News</a></h6>
+	<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Latest Events</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-white-50 a_tag" href="#"> Privacy</a></h6>
+ <h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-white-50 a_tag" href="#"> Contact Us</a></h6>
+		</div>
+	 </div>
+	</div>
+	<div class="col-md-3">
+	 <div class="footer_2i">
+				<h5 class="col_oran mb-4">Newsletter</h5>
+	<p class="text-white-50">Subscribe to Leitmotif newsletter this very day.</p>
+	<div class="input-group bg-white">
+	 <input type="text" class="form-control bg-transparent rounded-0 border-0" placeholder="Enter Your Email">
+	 <span class="input-group-btn">
+		<button class="btn btn-primary bg-transparent rounded-0 border-0 col_oran p-3" type="button">
+		 <i class="fa fa-location-arrow"></i></button>
+	 </span>
+ </div>
+ <div class="form-check mt-3 text-white-50">
+<input class="form-check-input" type="checkbox" value="">
+<label class="form-check-label" for="flexCheckDefault">
+I agree to all terms and policies of the company
+</label>
+</div>
+	 </div>
+	</div>
+</div>
+</div>
+</section>
+
+<section id="footer_b" class="pt-3 pb-3 bg-dark">
+<div class="container-xl">
+ <div class="footer_b1 row text-center">
+	 <div class="col-md-12">
+	<p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_oran fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+</div>
+ </div> 
+</div>
+</section>
+</div>
+
+
+
+<script src="js/common.js"></script>
+
+</body>
+</html>
+
+
+ 
